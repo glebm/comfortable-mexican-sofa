@@ -26,7 +26,7 @@ module ComfortableMexicanSofa
         app.config.assets.paths << bower_path
       end
       # Precompile Bootstrap fonts
-      app.config.assets.precompile << %r(comfortable_mexican_sofa/bootstrap-sass/assets/fonts/bootstrap/[\w-]+\.(?:eot|svg|ttf|woff)$)
+      app.config.assets.precompile << %r(comfy/bootstrap-sass/assets/fonts/bootstrap/[\w-]+\.(?:eot|svg|ttf|woff2?)$)
       # Minimum precision required by bootstrap-sass
       ::Sass::Script::Number.precision = [10, ::Sass::Script::Number.precision].max
     end
